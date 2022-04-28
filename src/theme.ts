@@ -7,7 +7,7 @@ const theme = extendTheme({
   },
   textStyles: {
     h1: {
-      fontSize: ['2xl', '3xl', '6xl'],
+      fontSize: ['3xl', '5xl', '6xl'],
       textTransform: 'uppercase',
       fontFamily: 'Barlow Condensed',
       fontWeight: 'bold',

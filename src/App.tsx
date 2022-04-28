@@ -94,7 +94,7 @@ function App() {
             </Tag>
             <Text textStyle='h2'>Monograph Dashboard</Text>
           </HStack>
-          <Text pt='12px' textStyle='h1' lineHeight='1'>
+          <Text pt='12px' textStyle='h1' lineHeight={{ base: 1.25, md: 1 }}>
             Powerful insights <br />
             into your team
           </Text>
