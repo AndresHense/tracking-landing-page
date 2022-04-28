@@ -1,9 +1,7 @@
 import {
+  Box,
   Button,
-  Container,
   Divider,
-  Flex,
-  Heading,
   HStack,
   IconButton,
   Image,
@@ -77,9 +75,9 @@ function App() {
         <VStack
           align='start'
           flex='1'
-          pl={{ base: '1rem', md: '2rem', lg: '14rem' }}
+          pl={{ base: '1rem', md: '1rem', lg: '2rem', xl: '14rem' }}
           spacing='1.5rem'
-          pt='12rem'
+          pt={{ base: '1rem', md: '1rem', lg: '4rem', xl: '6rem' }}
         >
           <HStack spacing='1rem'>
             <Tag
@@ -104,7 +102,7 @@ function App() {
             Project planning and time tracking <br />
             for agile teams
           </Text>
-          <HStack pt='3rem' spacing='2rem'>
+          <HStack pt='3rem' spacing='2rem' pb={{ base: '10rem', md: '10rem' }}>
             <Button
               colorScheme='red'
               textTransform='uppercase'
@@ -118,9 +116,26 @@ function App() {
             <Text textStyle='h2'>To see a preview</Text>
           </HStack>
         </VStack>
-        <Image pt='4rem' src='images/illustration-devices.svg' />
+        <Image
+          pt='4rem'
+          src='images/illustration-devices.svg'
+          objectFit='none'
+          objectPosition={{ base: '5px', md: '100px' }}
+          w={{ base: '800px', md: '960px', lg: '700px', xl: '960px' }}
+          h={{ base: '600px', md: '600px' }}
+        />
       </Stack>
       {/* */}
+      <Box
+        w={{ base: '55%', md: '50%', lg: '55%', xl: '47%' }}
+        h='400px'
+        bg='gray.200'
+        top={-2}
+        right={0}
+        borderBottomLeftRadius={99}
+        position='absolute'
+        zIndex={-1}
+      ></Box>
     </VStack>
   );
 }
